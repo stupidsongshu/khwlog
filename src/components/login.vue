@@ -58,7 +58,7 @@ export default {
 				sign: sign,
 				timestamp: timestamp
 			})
-			this.axios.post('http://xfjr.ledaikuan.cn:9292/khw/r/i', paramString).then(res => {
+			this.axios.post('http://47.100.136.167:8080/khw/r/i', paramString).then(res => {
 				let data = res.data
 				if (data.returnCode === '000000') {
 					window.sessionStorage.account = data.response.account
